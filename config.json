@@ -1,0 +1,11 @@
+{
+  "SourceRoot": "D:\\ROMs",
+  "CollectionsRoot": "D:\\rom-manager\\collections",
+  "BuildRoot": "D:\\rom-manager\\_build",
+  "LogRoot": "D:\\rom-manager\\logs",
+  "Devices": {
+    "rg28xx": "E:\\ROMs",
+    "retroid4b": "G:\\ROMs"
+  },
+  "LastUsedInventory": ""
+}
