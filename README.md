@@ -269,6 +269,3 @@ Built as a custom tool for managing curated ROM libraries with efficiency and co
 ## 📜 License
 
 Personal use / modify as needed
-
-```
-```
