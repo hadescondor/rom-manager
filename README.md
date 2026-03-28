@@ -124,7 +124,7 @@ For each file in inventory:
 
 ---
 
-## 🧹 Clean Mode (Important)
+## 🧹 Clean Mode
 
 When using **Clean**, the destination becomes an exact mirror of the inventory.
 
