@@ -1,58 +1,31 @@
-# 🎮 ROM Manager
+# ROM Manager
 
-A PowerShell-based tool for **curating, organizing, and deploying ROM collections** with smart syncing, dry-run support, and logging.
+A PowerShell-based ROM curation and deployment tool that uses **inventory files as the single source of truth** to manage and synchronize collections across devices.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-* 📂 **Interactive Curation**
-
-  * Select files/folders via file dialog
-  * Automatically builds/updates collection lists
-
-* ⚡ **Smart Syncing**
-
-  * Only copies new or changed files
-  * Skips unchanged files for fast deployments
-
-* 🧹 **Clean Mode**
-
-  * Removes files from the build that are not in the collection
-
-* 🔍 **Dry Run Mode**
-
-  * Preview changes before executing (no files copied or deleted)
-
-* 📊 **Change Summary**
-
-  * Shows:
-
-    * Files to copy
-    * Files to skip
-    * Files to remove
-    * Missing files
-
-* 📝 **Logging**
-
-  * Full session logs saved automatically
-
-* ⚙️ **Config-Driven**
-
-  * Central JSON config for paths and devices
+* 🎮 Curate ROM collections via file picker UI
+* 📄 Inventory-driven system (your `.txt` files define everything)
+* 🔄 Smart sync (copy only when needed)
+* 🧹 Optional clean mode (removes unmanaged files)
+* 🔍 Dry-run support for safe previews
+* 📊 Sync summary before execution
+* 🛑 Safety checks to prevent dangerous operations
+* 📝 Session logging
 
 ---
 
 ## 📁 Project Structure
 
 ```
-D:\ROMs\
-├── config.json
-├── collections\      # Your curated lists (.txt files)
-├── _build\           # Temporary build output
-├── logs\             # Session logs
-└── tools\
-    └── rom-manager.ps1
+rom-manager/
+│
+├── config.json          # Configuration file
+├── rom-manager.ps1           # Main script
+├── collections/         # Inventory files (.txt)
+├── logs/                # Session logs
 ```
 
 ---
@@ -64,34 +37,46 @@ Edit `config.json`:
 ```json
 {
   "SourceRoot": "D:\\ROMs",
-  "CollectionsRoot": "D:\\ROMs\\collections",
-  "BuildRoot": "D:\\ROMs\\_build",
-  "LogRoot": "D:\\ROMs\\logs",
+  "CollectionsRoot": "D:\\rom-manager\\collections",
+  "LogRoot": "D:\\rom-manager\\logs",
   "Devices": {
     "rg28xx": "E:\\ROMs",
-    "miyoo": "F:\\ROMs",
-    "retroid": "G:\\ROMs"
+    "rp5": "F:\\ROMs",
+    "retroidclassic4b": "G:\\ROMs"
   }
 }
 ```
 
-### 🔑 Key Fields
+### Fields
 
-* **SourceRoot**
-  Root directory where your ROM library lives
-
-* **CollectionsRoot**
-  Where your curated `.txt` files are stored
-
-* **BuildRoot**
-  Temporary staging area before deployment
-
-* **Devices**
-  Maps collection names → destination paths
+* **SourceRoot** → Master ROM directory
+* **CollectionsRoot** → Where inventory files live
+* **LogRoot** → Log output directory
+* **Devices** → Maps inventory name → destination path
 
 ---
 
-## 🧭 Usage
+## 🧠 Core Concept
+
+### Inventory = Source of Truth
+
+Each `.txt` file defines a collection:
+
+```
+SuperMarioBros.nes
+Zelda.nes
+Metroid.nes
+```
+
+This list fully determines:
+
+* What gets copied ✅
+* What gets skipped ✅
+* What gets deleted (in clean mode) ✅
+
+---
+
+## 🖥️ Usage
 
 Run the script:
 
@@ -99,173 +84,149 @@ Run the script:
 .\rom-manager.ps1
 ```
 
----
-
-## 📋 Menu Options
+### Menu Options
 
 ```
 1) Curate Collection
-2) Deploy (Clean)
-3) Deploy (No Clean)
+2) Deploy Collection (Clean)
+3) Deploy Collection (No Clean)
 4) Deploy (Dry Run)
 5) Exit
 ```
 
 ---
 
-## 🛠️ Workflow
+## 🎯 Curation Workflow
 
-### 1. Curate a Collection
+1. Select files/folders from `SourceRoot`
+2. Select an inventory file
+3. Script:
 
-* Select files and/or folders
-* Choose an existing collection file (or create a new one)
-* Files are saved as **relative paths**
-
-Example output:
-
-```
-gba\Pokemon Emerald.zip
-gb\Final Fantasy Adventure.zip
-```
+   * Expands folders recursively
+   * Converts to relative paths
+   * Merges with existing inventory
+   * Removes duplicates
+4. Preview is shown
+5. Inventory file is updated
 
 ---
 
-### 2. Deploy a Collection
+## 🔄 Deployment Behavior
 
-* Select a collection file
-* Tool builds a sync plan
-* Displays a summary
-* Prompts for confirmation
+### Sync Logic
 
----
+For each file in inventory:
 
-## 🔍 Sync Summary Example
-
-```
-=== Sync Summary ===
-To Copy  : 5
-To Skip  : 120
-To Remove: 2
-Missing  : 1
-```
-
----
-
-## 🧠 How Smart Sync Works
-
-The tool compares:
-
-* File size
-* Last modified time
-
-### Result:
-
-* ✅ Copy if changed
+* ✅ Copy if missing
+* ✅ Copy if changed (size or timestamp)
 * ⏭ Skip if identical
-* 🗑 Remove if not in collection (Clean mode)
+* ⚠ Report if missing from source
 
 ---
 
-## 🧹 Clean Mode Explained
+## 🧹 Clean Mode (Important)
 
-**Clean mode does NOT wipe the build folder.**
-
-Instead, it:
-
-* Removes files in `_build` that are **not in the collection**
+When using **Clean**, the destination becomes an exact mirror of the inventory.
 
 ### Example
 
-**Collection:**
+#### Inventory:
 
 ```
-A.zip
-B.zip
+Mario.nes
+Zelda.nes
 ```
 
-**Build folder before:**
+#### Destination BEFORE:
 
 ```
-A.zip
-B.zip
-C.zip
+Mario.nes
+Zelda.nes
+Metroid.nes   ❌ extra
 ```
 
-**After Clean:**
+#### AFTER Clean:
 
 ```
-A.zip
-B.zip
+Mario.nes
+Zelda.nes
 ```
+
+👉 Any file not in the inventory is **removed**.
 
 ---
 
-## 🧪 Dry Run Mode
+## 🔍 Dry Run
 
-* Uses robocopy’s `/L` flag
-* No files are copied or deleted
-* Safe way to preview changes
+Simulates the entire sync:
+
+* Shows what would be copied
+* Shows what would be deleted
+* Makes **no changes**
 
 ---
 
-## 🚀 Deployment Details
+## 📊 Sync Summary
 
-After building the collection:
+Before execution, the tool shows:
 
-* Uses `robocopy` to sync to the target device
-* Preserves folder structure
-* Multi-threaded for speed
+```
+To Copy   : X
+To Skip   : Y
+To Remove : Z
+Missing   : N
+```
+
+Large deletes (>50 files) require manual confirmation.
+
+---
+
+## 🛡️ Safety Features
+
+* Prevents syncing into source directory
+* Prevents dangerous parent/child path overlap
+* Requires confirmation for large deletions
+* Dry-run mode for safe testing
 
 ---
 
 ## 📝 Logging
 
-* Logs stored in `/logs`
-* Automatically created per session:
+Each session creates a log file:
 
 ```
-logs\session_YYYYMMDD_HHMMSS.log
+logs/session_YYYYMMDD_HHMMSS.log
 ```
 
-Includes:
+---
 
-* Menu actions
-* File operations
-* Robocopy output
+## ⚡ Design Principles
+
+* Deterministic (same input → same result)
+* Inventory-driven
+* Minimal unnecessary copying
+* Safe by default
+* Transparent operations
 
 ---
 
-## ⚠️ Known Considerations
+## 🔮 Future Improvements (Optional)
 
-* Paths are case-insensitive but normalized internally
-* Missing files are reported but not fatal
-* Large collections benefit significantly from smart sync
-
----
-
-## 💡 Tips
-
-* Use **Dry Run** before large deployments
-* Keep collections clean to avoid unnecessary removals
-* Logs are helpful for troubleshooting
+* Parallel copy operations for performance
+* File hash comparison for deeper validation
+* CLI argument support (non-interactive mode)
+* Progress bars for large sync jobs
 
 ---
 
-## 🔮 Future Ideas
+## ✅ Summary
 
-* Device selection menu
-* GUI interface (WinForms/WPF)
-* Hash-based verification (optional)
-* Progress indicators
+ROM Manager is a lightweight but powerful tool that gives you:
 
----
-
-## 🙌 Acknowledgments
-
-Built as a custom tool for managing curated ROM libraries with efficiency and control.
+* Full control over your ROM sets
+* Clean, predictable deployments
+* Confidence through preview + safety checks
 
 ---
 
-## 📜 License
-
-Personal use / modify as needed
+Enjoy managing your collections 🎮

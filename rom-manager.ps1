@@ -1,13 +1,20 @@
 Add-Type -AssemblyName System.Windows.Forms
 
-# --- Load Config ---
 $configPath = "D:\rom-manager\config.json"
-$config = Get-Content $configPath | ConvertFrom-Json
+
+if (!(Test-Path $configPath)) {
+    throw "Config file not found: $configPath"
+}
+
+try {
+    $config = Get-Content $configPath | ConvertFrom-Json
+} catch {
+    throw "Invalid JSON in config file."
+}
 
 # --- Globals ---
 $SourceRoot = $config.SourceRoot
 $CollectionsRoot = $config.CollectionsRoot
-$BuildRoot = $config.BuildRoot
 $LogRoot = $config.LogRoot
 
 # --- Ensure folders exist ---
@@ -74,8 +81,9 @@ function Invoke-Curation {
     }
 
     # Normalize
+    $normalizedSource = (Resolve-Path $SourceRoot).Path
     $relative = $allFiles | ForEach-Object {
-        $_.Replace("$SourceRoot\", "").Trim()
+        $_.Replace("$normalizedSource\", "").Trim()
     } | Where-Object { $_ }
 
     # Merge
@@ -83,8 +91,12 @@ function Invoke-Curation {
 
     $final = ($existing + $relative) | Sort-Object -Unique
 
-    # Preview
+    if (Get-Command Out-GridView -ErrorAction SilentlyContinue) {
     $final | Out-GridView -Title "Preview"
+    } else {
+        Write-Host "Preview (first 20):"
+        $final | Select-Object -First 20
+    }
 
     # Save
     [System.IO.File]::WriteAllLines($inventory, $final)
@@ -98,7 +110,7 @@ function Get-SyncPlan {
     param(
         [string]$InventoryFile,
         [string]$SourceRoot,
-        [string]$BuildPath,
+        [string]$Destination,
         [switch]$Clean
     )
 
@@ -111,7 +123,7 @@ function Get-SyncPlan {
 
     foreach ($entry in $entries) {
         $src = Join-Path $SourceRoot $entry
-        $dst = Join-Path $BuildPath $entry
+        $dst = Join-Path $Destination $entry
 
         $expectedFiles += $dst
 
@@ -141,12 +153,22 @@ function Get-SyncPlan {
 
     $toRemove = @()
 
-    if ($Clean -and (Test-Path $BuildPath)) {
-        $existingFiles = Get-ChildItem $BuildPath -Recurse -File | Select-Object -ExpandProperty FullName
+    if ($Clean -and (Test-Path $Destination)) {
+        $existingFiles = Get-ChildItem $Destination -Recurse -File | Select-Object -ExpandProperty FullName
+
+        $expectedFilesLower = $expectedFiles | ForEach-Object {
+            if (Test-Path $_) {
+                (Resolve-Path $_).Path.ToLower()
+            } else {
+                $_.ToLower()
+            }
+        }
+
+        $destRoot = (Resolve-Path $Destination).Path
 
         foreach ($file in $existingFiles) {
-            if ($file -notin $expectedFiles) {
-                $toRemove += $file.Replace("$BuildPath\", "")
+            if ($file.ToLower() -notin $expectedFilesLower) {
+                $toRemove += $file.Replace("$destRoot\", "")
             }
         }
     }
@@ -196,77 +218,76 @@ function Show-SyncSummary {
     Write-Host ""
 }
 
-# --- Build Function ---
-
-function Sync-BuildFolder {
+# --- Sync Function ---
+function Invoke-DirectSync {
     param(
-        [string]$InventoryFile,
+        [object]$Plan,
         [string]$SourceRoot,
-        [string]$BuildPath,
+        [string]$Destination,
+        [switch]$DryRun,
         [switch]$Clean
     )
 
-    $entries = Get-Content $InventoryFile | Where-Object { $_ }
+    Write-Host "`n=== Executing Sync === ($($Plan.ToCopy.Count) copies, $($Plan.ToRemove.Count) deletes)" -ForegroundColor Cyan
 
-    $expectedFiles = @()
-    $copied = 0
-    $skipped = 0
-    $missing = @()
-
-    foreach ($entry in $entries) {
+    # --- Copy phase ---
+    foreach ($entry in $Plan.ToCopy) {
         $src = Join-Path $SourceRoot $entry
-        $dst = Join-Path $BuildPath $entry
-
-        $expectedFiles += $dst
-
-        if (!(Test-Path $src)) {
-            $missing += $entry
-            continue
-        }
-
+        $dst = Join-Path $Destination $entry
         $dstDir = Split-Path $dst
+
         if (!(Test-Path $dstDir)) {
-            New-Item -ItemType Directory -Path $dstDir -Force | Out-Null
-        }
-
-        $copyNeeded = $true
-
-        if (Test-Path $dst) {
-            $srcInfo = Get-Item $src
-            $dstInfo = Get-Item $dst
-
-            # Compare size + last write time (fast)
-            if ($srcInfo.Length -eq $dstInfo.Length -and
-                $srcInfo.LastWriteTime -eq $dstInfo.LastWriteTime) {
-                $copyNeeded = $false
+            if (-not $DryRun) {
+                New-Item -ItemType Directory -Path $dstDir -Force | Out-Null
             }
         }
 
-        if ($copyNeeded) {
-            Copy-Item $src $dst -Force
-            $copied++
+        if ($DryRun) {
+            Write-Host "[DRY RUN] Copy: $entry"
         } else {
-            $skipped++
+            Copy-Item $src $dst -Force
         }
     }
 
-    # --- Optional cleanup ---
-    if ($Clean) {
-        $existingFiles = Get-ChildItem $BuildPath -Recurse -File | Select-Object -ExpandProperty FullName
+    # --- Remove phase ---
+    if ($Clean -and $Plan.ToRemove.Count -gt 0) {
+        foreach ($entry in $Plan.ToRemove) {
+            $dst = Join-Path $Destination $entry
 
-        foreach ($file in $existingFiles) {
-            if ($file -notin $expectedFiles) {
-                Remove-Item $file -Force
+            if ($DryRun) {
+                Write-Host "[DRY RUN] Remove: $entry"
+            } else {
+                if (Test-Path $dst) {
+                    Remove-Item $dst -Force
+                }
             }
         }
     }
 
-    # --- Report ---
-    Write-Host "Copied: $copied"
-    Write-Host "Skipped: $skipped"
-    if ($missing.Count -gt 0) {
-        Write-Host "Missing files:" -ForegroundColor Yellow
-        $missing
+    Write-Host "`nSync complete." -ForegroundColor Green
+}
+
+# --- Safe Guards ---
+function Assert-SafeDestination {
+    param(
+        [string]$SourceRoot,
+        [string]$Destination
+    )
+
+    $src = (Resolve-Path $SourceRoot).Path.ToLower()
+
+    $dst = if (Test-Path $Destination) {
+        (Resolve-Path $Destination).Path.ToLower()
+    } else {
+        $Destination.ToLower()
+    }
+
+    if ($src -eq $dst) {
+        throw "Destination cannot be the same as SourceRoot!"
+    }
+
+    if ($src.StartsWith($dst)) {
+        throw "Destination cannot be a parent of SourceRoot!"
     }
 }
 
@@ -289,55 +310,38 @@ function Invoke-Deploy {
 
     $dest = $config.Devices.$setName
 
-    # --- Call Build Function ---
-    $buildPath = Join-Path $BuildRoot $setName
-
-    if (!(Test-Path $buildPath)) {
-        New-Item -ItemType Directory -Path $buildPath | Out-Null
-    }
+    Assert-SafeDestination -SourceRoot $SourceRoot -Destination $dest
 
     $plan = Get-SyncPlan -InventoryFile $inventory `
                         -SourceRoot $SourceRoot `
-                        -BuildPath $buildPath `
+                        -Destination $dest `
                         -Clean:$Clean
 
     Show-SyncSummary $plan
 
-    # --- Confirmation ---
+    if ($Clean -and $Plan.ToRemove.Count -gt 50) {
+        Write-Host "WARNING: About to delete $($Plan.ToRemove.Count) files!" -ForegroundColor Red
+        $confirm = Read-Host "Type DELETE to confirm"
+
+        if ($confirm -ne "DELETE") {
+            Write-Host "Aborted."
+            return
+        }
+    }
+
     $confirm = Read-Host "Proceed with sync? (y/n)"
-    if ($confirm -ne "y") {
+    if ($confirm -notmatch "^(y|yes)$") {
         Write-Host "Cancelled."
         return
     }
 
-    # --- Execute ---
-
-    Sync-BuildFolder -InventoryFile $inventory `
+    Invoke-DirectSync -Plan $plan `
                     -SourceRoot $SourceRoot `
-                    -BuildPath $buildPath `
+                    -Destination $dest `
+                    -DryRun:$DryRun `
                     -Clean:$Clean
 
-    Write-Host "Build complete."
-
-        # Robocopy
-        $roboargs = @(
-            "`"$buildPath`"",
-            "`"$dest`"",
-            "/MIR",
-            "/MT:16",
-            "/R:1",
-            "/W:1",
-            "/XO" # exclude older files
-        )
-
-        if ($DryRun) {
-            $roboargs += "/L"
-            Write-Host "Running in DRY RUN mode"
-        }
-
-        robocopy @roboargs
-
-        Write-Host "Deploy finished."
+    Write-Host "Deployment complete."
     }
 
 # --- Menu ---
@@ -363,11 +367,12 @@ while ($true) {
         "2" { Invoke-Deploy -DryRun $false -Clean }
         "3" { Invoke-Deploy -DryRun $false }
         "4" { Invoke-Deploy -DryRun $true }
-        "5" { return }
+        "5" {
+            Stop-Log
+            break
+        }
         default { Write-Host "Invalid option" }
     }
 
     Read-Host "Press Enter to continue"
 }
-
-Stop-Log
