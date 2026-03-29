@@ -23,7 +23,7 @@ A PowerShell-based ROM curation and deployment tool that uses **inventory files 
 rom-manager/
 │
 ├── config.json          # Configuration file
-├── rom-manager.ps1           # Main script
+├── rom-manager.ps1      # Main script
 ├── collections/         # Inventory files (.txt)
 ├── logs/                # Session logs
 ```
