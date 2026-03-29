@@ -4,7 +4,17 @@
   "LogRoot": "D:\\rom-manager\\logs",
   "Devices": {
     "rg28xx": "E:\\ROMs",
-    "retroidclassic4b": "G:\\ROMs"
+    "rpc4b": "G:\\ROMs",
+    "rpc6b": "G:\\ROMs"
   },
-  "LastUsedInventory": ""
+  "Exclusions": [
+    ".nomedia",
+    "systeminfo.txt",
+    "systems.txt",
+    "Thumbs.db"
+  ],
+  "ExcludeDirectories": [
+    "BIOS",
+    "System Volume Information"
+  ]
 }
