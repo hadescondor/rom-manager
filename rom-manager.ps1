@@ -138,8 +138,7 @@ function Get-SyncPlan {
             $srcInfo = Get-Item $src
             $dstInfo = Get-Item $dst
 
-            if ($srcInfo.Length -eq $dstInfo.Length -and
-                $srcInfo.LastWriteTime -eq $dstInfo.LastWriteTime) {
+            if ($srcInfo.Length -eq $dstInfo.Length) {
                 $copyNeeded = $false
             }
         }
@@ -369,7 +368,7 @@ while ($true) {
         "4" { Invoke-Deploy -DryRun $true }
         "5" {
             Stop-Log
-            break
+            return
         }
         default { Write-Host "Invalid option" }
     }
