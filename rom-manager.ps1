@@ -278,7 +278,7 @@ function Invoke-DirectSync {
             if ($DryRun) {
                 Write-Host "[DRY RUN] Copy: $entry"
             } else {
-                Copy-Item $src $dst -Force
+                Copy-Item -LiteralPath $src -Destination $dst -Force
             }
         }
 
@@ -288,18 +288,20 @@ function Invoke-DirectSync {
 
     # --- Remove phase ---
     if ($Clean -and $Plan.ToRemove.Count -gt 0) {
-
         $total = $Plan.ToRemove.Count
         $current = 0
+        
+        Write-Host "Starting removal phase..." -ForegroundColor Yellow
 
         foreach ($entry in $Plan.ToRemove) {
             $current++
 
             $percent = [int](($current / $total) * 100)
+            $displayName = [IO.Path]::GetFileName($entry)
 
             Write-Progress `
                 -Activity "Removing files" `
-                -Status "$current of $total ($percent%)" `
+                -Status "$current of $total ($percent%) - $displayName" `
                 -PercentComplete $percent
 
             $dst = Join-Path $Destination $entry
@@ -307,12 +309,19 @@ function Invoke-DirectSync {
             if ($DryRun) {
                 Write-Host "[DRY RUN] Remove: $entry"
             } else {
-                if (Test-Path $dst) {
-                    Remove-Item $dst -Force
+                if (Test-Path -LiteralPath $dst) {
+                    try {
+                        Remove-Item -LiteralPath $dst -Force -ErrorAction Stop
+                        Write-Host "Removed: $entry"
+                    } catch {
+                        Write-Host "Failed to remove: $entry" -ForegroundColor Red
+                    }
                 }
             }
         }
-    }
+
+    Write-Progress -Activity "Removing files" -Completed
+}
 
     Write-Host "`nSync complete." -ForegroundColor Green
 }
@@ -378,7 +387,6 @@ function Invoke-Deploy {
             return
         }
     }
-
     $confirm = Read-Host "Proceed with sync? (y/n)"
     if ($confirm -notmatch "^(y|yes)$") {
         Write-Host "Cancelled."
