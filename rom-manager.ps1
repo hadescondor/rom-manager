@@ -247,27 +247,61 @@ function Invoke-DirectSync {
     Write-Host "`n=== Executing Sync === ($($Plan.ToCopy.Count) copies, $($Plan.ToRemove.Count) deletes)" -ForegroundColor Cyan
 
     # --- Copy phase ---
-    foreach ($entry in $Plan.ToCopy) {
-        $src = Join-Path $SourceRoot $entry
-        $dst = Join-Path $Destination $entry
-        $dstDir = Split-Path $dst
+    if ($Plan.ToCopy.Count -eq 0) {
+        Write-Host "No files to copy."
+    }
+    if ($Plan.ToCopy.Count -gt 0) {
+        $total = $Plan.ToCopy.Count
+        $current = 0
 
-        if (!(Test-Path $dstDir)) {
-            if (-not $DryRun) {
-                New-Item -ItemType Directory -Path $dstDir -Force | Out-Null
+        foreach ($entry in $Plan.ToCopy) {
+            $current++
+
+            $percent = [int](($current / $total) * 100)
+            $displayName = [IO.Path]::GetFileName($entry)
+
+            Write-Progress `
+                -Activity "Copying files" `
+                -Status "$current of $total ($percent%) - $displayName" `
+                -PercentComplete $percent
+
+            $src = Join-Path $SourceRoot $entry
+            $dst = Join-Path $Destination $entry
+            $dstDir = Split-Path $dst
+
+            if (!(Test-Path $dstDir)) {
+                if (-not $DryRun) {
+                    New-Item -ItemType Directory -Path $dstDir -Force | Out-Null
+                }
+            }
+
+            if ($DryRun) {
+                Write-Host "[DRY RUN] Copy: $entry"
+            } else {
+                Copy-Item $src $dst -Force
             }
         }
 
-        if ($DryRun) {
-            Write-Host "[DRY RUN] Copy: $entry"
-        } else {
-            Copy-Item $src $dst -Force
-        }
+        # Clear progress bar when done
+        Write-Progress -Activity "Copying files" -Completed
     }
 
     # --- Remove phase ---
     if ($Clean -and $Plan.ToRemove.Count -gt 0) {
+
+        $total = $Plan.ToRemove.Count
+        $current = 0
+
         foreach ($entry in $Plan.ToRemove) {
+            $current++
+
+            $percent = [int](($current / $total) * 100)
+
+            Write-Progress `
+                -Activity "Removing files" `
+                -Status "$current of $total ($percent%)" `
+                -PercentComplete $percent
+
             $dst = Join-Path $Destination $entry
 
             if ($DryRun) {
