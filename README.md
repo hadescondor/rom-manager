@@ -41,11 +41,24 @@ Edit `config.json`:
   "LogRoot": "D:\\rom-manager\\logs",
   "Devices": {
     "rg28xx": "E:\\ROMs",
-    "rp5": "F:\\ROMs",
-    "retroidclassic4b": "G:\\ROMs"
-  }
+    "rpc4b": "G:\\ROMs",
+    "rpc6b": "H:\\ROMs"
+  },
+  "Exclusions": [
+    ".nomedia",
+    "systeminfo.txt",
+    "systems.txt",
+    "Thumbs.db"
+  ],
+  "ExcludeDirectories": [
+    "BIOS",
+    "System Volume Information"
+  ]
 }
 ```
+
+> [!NOTE] 
+> Anything in the "Exclusions" or "ExcludedDirectories" will not be removed when "Clean" is used.
 
 ### Fields
 
@@ -126,7 +139,7 @@ For each file in inventory:
 
 ## 🧹 Clean Mode
 
-When using **Clean**, the destination becomes an exact mirror of the inventory.
+When using **Clean**, the destination becomes an exact mirror of the inventory.<sup>*see note below</sup>
 
 ### Example
 
@@ -152,7 +165,9 @@ Mario.nes
 Zelda.nes
 ```
 
-👉 Any file not in the inventory is **removed**.
+👉 Any file not in the inventory is **removed**<sup>*</sup>.
+
+<sup>*Anything listed in the config under "Exclusions" or "ExcludedDirectories" will not be removed when "Clean" is used.</sup>
 
 ---
 
