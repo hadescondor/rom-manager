@@ -4,6 +4,7 @@
   "LogRoot": "D:\\rom-manager\\logs",
   "Devices": {
     "rg28xx": "E:\\ROMs",
+    "rp5": "H:\\ROMs",
     "rpc4b": "G:\\ROMs",
     "rpc6b": "H:\\ROMs"
   },
