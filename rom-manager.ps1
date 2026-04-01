@@ -165,9 +165,26 @@ function Get-SyncPlan {
 
         $destRoot = (Resolve-Path $Destination).Path
 
+        $exclusions = $config.Exclusions | ForEach-Object { $_.ToLower() }
+        $excludeDirs = $config.ExcludeDirectories | ForEach-Object { $_.ToLower() }
+
         foreach ($file in $existingFiles) {
-            if ($file.ToLower() -notin $expectedFilesLower) {
-                $toRemove += $file.Replace("$destRoot\", "")
+            $relative = $file.Replace("$destRoot\", "")
+            $fileName = [IO.Path]::GetFileName($relative).ToLower()
+
+            $isExcludedDir = $false
+            foreach ($dir in $excludeDirs) {
+                if ($relative.ToLower().StartsWith($dir)) {
+                    $isExcludedDir = $true
+                    break
+                }
+            }
+
+            if ($file.ToLower() -notin $expectedFilesLower -and
+                $fileName -notin $exclusions -and
+                -not $isExcludedDir) {
+
+                $toRemove += $relative
             }
         }
     }
