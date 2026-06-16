@@ -1,0 +1,228 @@
+gb\Final Fantasy Adventure (USA).zip
+gb\Final Fantasy Legend II (USA).zip
+gb\Final Fantasy Legend III (USA).zip
+gb\Final Fantasy Legend, The (USA).zip
+gb\Harvest Moon GB (USA) (SGB Enhanced).zip
+gb\James Bond 007 (USA, Europe) (SGB Enhanced).zip
+gb\Kirby's Block Ball (USA, Europe) (SGB Enhanced).zip
+gb\Kirby's Dream Land (USA, Europe).zip
+gb\Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).zip
+gb\Kirby's Pinball Land (USA, Europe).zip
+gb\Kirby's Star Stacker (USA, Europe) (SGB Enhanced).zip
+gb\Legend of Zelda, The - Link's Awakening (USA, Europe).zip
+gb\Pokemon - Blue Version (USA, Europe) (SGB Enhanced).zip
+gb\Pokemon - Red Version (USA, Europe) (SGB Enhanced).zip
+gb\Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe) (CGB+SGB Enhanced).zip
+gb\Super Mario Land (World).zip
+gb\Super Mario Land 2 - 6 Golden Coins (USA, Europe).zip
+gb\Tamagotchi (USA, Europe) (SGB Enhanced).zip
+gb\Turok - Battle of the Bionosaurs (USA, Europe) (En,Fr,De,Es).zip
+gb\Wario Land - Super Mario Land 3 (World).zip
+gb\Wario Land II (USA, Europe) (SGB Enhanced).zip
+gba\Advance Wars (USA) (Rev 1) (No Glitch) (Bartis1989).zip
+gba\Advance Wars 2 - Black Hole Rising (USA).zip
+gba\Castlevania - Aria of Sorrow (USA).zip
+gba\Castlevania - Circle of the Moon (USA).zip
+gba\Castlevania - Harmony of Dissonance (USA).zip
+gba\Dragon Quest Monsters - Caravan Heart (Japan) (En) (v1.0) (KaioShin).zip
+gba\Final Fantasy I & II - Dawn of Souls (USA).zip
+gba\Final Fantasy IV Advance (USA).zip
+gba\Final Fantasy Tactics Advance (Europe) (En,Fr,De,Es,It).zip
+gba\Final Fantasy V Advance (USA).zip
+gba\Final Fantasy VI Advance (Europe) (En,Fr,De,Es,It).zip
+gba\Fire Emblem - The Binding Blade (En) (v1.2.1) (Gringe).zip
+gba\Fire Emblem - The Blazing Blade (USA, Australia).zip
+gba\Fire Emblem - The Sacred Stones (Europe) (En,Fr,De,Es,It).zip
+gba\F-Zero - Climax (Japan).zip
+gba\F-Zero - GP Legend (USA).zip
+gba\F-Zero - Maximum Velocity (USA, Europe).zip
+gba\Golden Sun - The Lost Age (USA, Europe).zip
+gba\Golden Sun (USA, Europe).zip
+gba\Gunstar Super Heroes (USA).zip
+gba\Kirby - Nightmare in Dream Land (USA).zip
+gba\Kirby & The Amazing Mirror (USA).zip
+gba\Legend of Zelda, The - A Link to the Past & Four Swords (USA).zip
+gba\Legend of Zelda, The - The Minish Cap (USA).zip
+gba\Magical Vacation (Japan) (En) (v1.0) (magicalpatcher).zip
+gba\Mario Golf - Advance Tour (USA).zip
+gba\Mario Kart - Super Circuit (USA).zip
+gba\Metroid - Zero Mission (USA).zip
+gba\Metroid Fusion (USA).zip
+gba\Mother 1+2 (Japan) (Jeffman Translation).zip
+gba\Mother 3 (Japan) (En) (Chewy-Jeffman-Tomato) (v1.3).zip
+gba\Pokemon - Emerald Version (USA, Europe).zip
+gba\Pokemon - FireRed Version (USA, Europe).zip
+gba\Pokemon - LeafGreen Version (USA, Europe).zip
+gba\Pokemon - Ruby Version (USA, Europe).zip
+gba\Pokemon - Sapphire Version (USA, Europe).zip
+gba\Sonic Advance (USA) (En,Ja).zip
+gba\Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It).zip
+gba\Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip
+gba\Super Mario Advance (USA, Europe).zip
+gba\Super Mario Advance 2 - Super Mario World (USA, Australia).zip
+gba\Super Mario Advance 3 - Yoshi's Island (USA).zip
+gba\Super Mario Advance 4 - Super Mario Bros. 3 (USA).zip
+gba\Tomato Adventure (Japan) (En) (Unknown W. Brackets) (v1.1.1).zip
+gbah\Final Fantasy VI Advance (Europe) (Sound Restoration + Orchestra) (Bregalad) (v2.1).zip
+gbah\Pokemon - Emerald Rogue v2.0.1a (USA, Europe).zip
+gbah\Pokemon - Emerald Seaglass (3.0).zip
+gbah\Pokemon - Fire Red Version (USA) (QoL Enhancement).zip
+gbah\Pokemon - Liquid Crystal Version (USA).zip
+gbah\Pokemon - Ultra Violet Version (USA, Europe).zip
+gbah\Pokemon - Unbound (v2.1.1) (Hack).zip
+gbc\Dragon Warrior I & II (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Dragon Warrior III (USA).zip
+gbc\Dragon Warrior Monsters (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Dragon Warrior Monsters 2 - Cobi's Journey (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Heroes of Might and Magic (USA) (En,Fr,De).zip
+gbc\Heroes of Might and Magic II (USA) (En,Fr,De).zip
+gbc\Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Legend of Zelda, The - Oracle of Ages (USA, Australia).zip
+gbc\Legend of Zelda, The - Oracle of Seasons (USA, Australia).zip
+gbc\Pokemon - Crystal Version (USA, Europe) (Rev 1).zip
+gbc\Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbch\Final Fantasy Adventure Color (USA).zip
+gbch\Final Fantasy Legend DX, The (USA).zip
+gbch\Final Fantasy Legend II DX (USA).zip
+gbch\Final Fantasy Legend III DX (USA).zip
+gbch\Pokemon - Prism Version (v0.94, Build 237) (Hack).zip
+gbh\Kirby's Dream Land (USA, Europe) (DX) (Emulators with Saturated Color) (GreenAndACat) (v1.3).zip
+gbh\Kirby's Dream Land 2 DX (USA, Europe).zip
+gbh\Pokemon - Brown Version (USA, Europe) (SGB Enhanced).zip
+gbh\Super Mario Land (World) (DX) (toruzz) (v1.0).zip
+gbh\Super Mario Land 2 - 6 Golden Coins (USA) (DX) (toruzz) (v1.81).zip
+ndsh\Castlevania - Dawn of Sorrow (USA) (No Touch) (v1.1) (LagoLunatic).zip
+ndsh\Legend of Zelda, The - Phantom Hourglass (USA) (D-Pad Controls) (v1.0) (Greiga Master).zip
+ndsh\Legend of Zelda, The - Spirit Tracks (USA) (D-Pad Controls) (v1.01) (Greiga Master).zip
+nes\Bionic Commando (USA).zip
+nes\Bubble Bobble (USA).zip
+nes\Bubble Bobble Part 2 (USA).zip
+nes\Bucky O'Hare (USA).zip
+nes\Bump 'n' Jump (USA).zip
+nes\Cabal (USA).zip
+nes\Cyber Stadium Series - Base Wars (USA).zip
+nes\Kirby's Adventure (USA).zip
+nes\StarTropics (USA).zip
+nes\Super Mario Bros. (World).zip
+nes\Super Mario Bros. 2 (USA).zip
+nes\Super Mario Bros. 3 (USA).zip
+nesh\Mother - 25th Anniversary Edition (v1.11) (DragonDePlatino) (Hack).zip
+nesh\MOTHER Restored (v2.0).zip
+nesh\SMB3 - Mario Adventure (Hack).zip
+nesh\SMB3 - Mario Adventure 3 (v1.0) (DahrkDaiz) (Hack).zip
+ps2\Dragon Quest & Final Fantasy in Itadaki Street Special (Japan).chd
+ps2\Dragon Quest V - Tenkuu no Hanayome (Japan) (En) (v1.2 - DQ Naming) (DQ Translations).chd
+ps2\Dragon Quest VIII - Journey of the Cursed King (USA).chd
+ps2\Final Fantasy X International (Japan) (En,Ja).chd
+ps2\Shadow Hearts (USA).chd
+psx\.hidden\Chrono Cross (USA) (Disc 1).chd
+psx\.hidden\Chrono Cross (USA) (Disc 2).chd
+psx\.hidden\Parasite Eve (USA) (Disc 1).chd
+psx\.hidden\Parasite Eve (USA) (Disc 2).chd
+psx\.hidden\Parasite Eve II (USA) (Disc 1).chd
+psx\.hidden\Parasite Eve II (USA) (Disc 2).chd
+psx\.hidden\Wild Arms 2 (USA) (Disc 1).chd
+psx\.hidden\Wild Arms 2 (USA) (Disc 2).chd
+psx\.hidden\Xenogears (USA) (Disc 1).chd
+psx\.hidden\Xenogears (USA) (Disc 2).chd
+psx\Alundra (USA) (Rev 1).chd
+psx\Alundra 2 - A New Legend Begins (USA).chd
+psx\Armored Core (USA).chd
+psx\BattleTanx - Global Assault (USA).chd
+psx\Breath of Fire III (USA).chd
+psx\Breath of Fire IV (USA).chd
+psx\Castlevania - Symphony of the Night (USA).chd
+psx\Chrono Cross (USA).m3u
+psx\Crash Bandicoot (USA).chd
+psx\Driver - You Are the Wheelman (USA) (Rev 1).chd
+psx\Duke Nukem - Total Meltdown (USA).chd
+psx\Ehrgeiz - God Bless the Ring (USA).chd
+psx\Grand Theft Auto (USA).chd
+psx\Grand Theft Auto 2 (USA).chd
+psx\Parasite Eve (USA).m3u
+psx\Parasite Eve II (USA).m3u
+psx\Penny Racers (Europe).chd
+psx\Rogue Trip - Vacation 2012 (USA).chd
+psx\SaGa Frontier (USA).chd
+psx\Silent Hill (USA).chd
+psx\Soul Blade (USA).chd
+psx\Spyro - Year of the Dragon (USA) (Rev 1).chd
+psx\Spyro 2 - Ripto's Rage! (USA).chd
+psx\Spyro the Dragon (USA).chd
+psx\Street Racer (USA).chd
+psx\Test Drive 5 (USA).chd
+psx\Twisted Metal - Small Brawl (USA).chd
+psx\Twisted Metal 2 (USA).chd
+psx\Vagrant Story (USA).chd
+psx\Vandal Hearts (USA).chd
+psx\Wild Arms 2 (USA).m3u
+psx\World of Dragon Warrior - Torneko - The Last Hope (USA).chd
+psx\World's Scariest Police Chases (USA).chd
+psx\Xenogears (USA).m3u
+snes\Al Unser Jr.'s Road to the Top (USA).zip
+snes\Battletoads-Double Dragon (USA).zip
+snes\Captain Tsubasa III - Koutei no Chousen (English v1.0).zip
+snes\Chrono Trigger (USA).zip
+snes\Contra III - The Alien Wars (USA).zip
+snes\Donkey Kong Country (USA) (Rev 2).zip
+snes\Donkey Kong Country 2 - Diddy's Kong Quest (USA) (En,Fr) (Rev 1).zip
+snes\Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).zip
+snes\Dragon Quest I & II (Japan) (En) (DQ) (v2.0) (RPGOne).zip
+snes\Dragon Quest III - Soshite Densetsu he... (Japan) (En) (v1.1) (DaMarsMan).zip
+snes\Dragon Quest V - Tenkuu no Hanayome (Japan) (En) (v2.01F) (DeJap).zip
+snes\Dragon Quest VI - Maboroshi no Daichi (Japan) (En) (v0.90.2) (NoPrgress).zip
+snes\EarthBound (USA).zip
+snes\Fatal Fury (USA).zip
+snes\Fatal Fury 2 (USA).zip
+snes\Fatal Fury Special (USA).zip
+snes\Final Fantasy - Mystic Quest (USA).zip
+snes\Final Fantasy II (USA).zip
+snes\Final Fantasy III (USA).zip
+snes\Final Fight Guy (USA).zip
+snes\F-Zero (USA).zip
+snes\Illusion of Gaia (USA).zip
+snes\Jungle Strike (USA).zip
+snes\Kirby Super Star (USA).zip
+snes\Kirby's Dream Land 3 (USA).zip
+snes\Lawnmower Man, The (USA).zip
+snes\Legend of Zelda, The - A Link to the Past (USA).zip
+snes\Looney Tunes B-Ball (USA).zip
+snes\Lufia & the Fortress of Doom (USA).zip
+snes\Lufia II - Rise of the Sinistrals (USA).zip
+snes\Madden NFL '94 (USA).zip
+snes\Mega Man 7 (USA).zip
+snes\Mega Man X (USA).zip
+snes\Mega Man X2 (USA).zip
+snes\Mega Man X3 (USA).zip
+snes\Pilotwings (USA).zip
+snes\Secret of Evermore (USA).zip
+snes\Secret of Mana (USA).zip
+snes\Soul Blazer (USA).zip
+snes\Star Fox (USA).zip
+snes\Star Fox 2 (USA, Europe).zip
+snes\Street Racer (USA).zip
+snes\Super Castlevania IV (USA).zip
+snes\Super Double Dragon (USA).zip
+snes\Super Ghouls 'N Ghosts (USA).zip
+snes\Super Mario All-Stars (USA).zip
+snes\Super Mario Kart (USA).zip
+snes\Super Mario RPG - Legend of the Seven Stars (USA).zip
+snes\Super Mario World (USA).zip
+snes\Super Mario World 2 - Yoshi's Island (USA).zip
+snes\Super Metroid (Japan, USA) (En,Ja).zip
+snes\Super Punch-Out!! (USA).zip
+snes\Super Valis IV (USA).zip
+snes\Teenage Mutant Ninja Turtles IV - Turtles in Time (USA).zip
+snes\Terranigma (Europe).zip
+snes\Top Gear 2 (USA).zip
+snes\Trials of Mana (World) (Collection of Mana).zip
+snes\Uniracers (USA).zip
+snes\WeaponLord (USA).zip
+snes\Ys III - Wanderers from Ys (USA).zip
+snes\Ys IV - Mask of the Sun (Japan) (En) (v2.10) (Aeon Genesis).zip
+snes\Ys V - Ushinawareta Suna no Miyako Kefin (Japan) (En) (v1.0) (Aeon Genesis).zip
+snesh\EarthBound (USA) (New Controls) (v1.0) (Herringway).zip
+snesh\FFVI - T-Edition (En) (v1.1) (Tomato) (Hack).zip
+snesh\SMW - A Plumber for All Seasons (WhiteYoshiEgg) (v2021-11-09) (Hack).zip
