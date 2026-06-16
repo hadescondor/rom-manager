@@ -1,0 +1,221 @@
+arcade\aburner2.zip
+arcade\alien3.zip
+arcade\altbeast.zip
+arcade\aof.zip
+arcade\aof2.zip
+arcade\aof3.zip
+arcade\bucky.zip
+arcade\cabal.zip
+arcade\captaven.zip
+arcade\contra.zip
+arcade\crusnexo.zip
+arcade\crusnusa.zip
+arcade\crusnwld.zip
+arcade\ddsom.zip
+arcade\ddtod.zip
+arcade\doa.zip
+arcade\doa2m.zip
+arcade\doubledr.zip
+arcade\ehrgeiz.zip
+arcade\f15se.zip
+arcade\fatfursp.zip
+arcade\fatfurwa.zip
+arcade\fatfury1.zip
+arcade\fatfury2.zip
+arcade\fatfury3.zip
+arcade\ffight.zip
+arcade\ffight2b.zip
+arcade\ffight3b.zip
+arcade\fotns.zip
+arcade\ga2.zip
+arcade\garou.zip
+arcade\gauntleg.zip
+arcade\ggx.zip
+arcade\ggx15.zip
+arcade\gijoe.zip
+arcade\goldnaxe.zip
+arcade\gunforc2.zip
+arcade\gunforce.zip
+arcade\kof2000.zip
+arcade\kof2001.zip
+arcade\kof2002.zip
+arcade\kof2003.zip
+arcade\kof94.zip
+arcade\kof95.zip
+arcade\kof96.zip
+arcade\kof97.zip
+arcade\kof98.zip
+arcade\kof98umh.zip
+arcade\kof99.zip
+arcade\mslug.zip
+arcade\mslug2.zip
+arcade\mslug3.zip
+arcade\mslug4.zip
+arcade\mslug5.zip
+arcade\mslug6.zip
+arcade\mslugx.zip
+arcade\sf2ce.zip
+arcade\sfa3.zip
+arcade\sfiii3.zip
+arcade\simpsons.zip
+arcade\tmnt.zip
+arcade\tmnt2.zip
+arcade\tmntmwb.zip
+genesis\After Burner II (USA, Europe).zip
+genesis\Aladdin (USA).zip
+genesis\Alien 3 (USA, Europe).zip
+genesis\Battletoads (World).zip
+genesis\Battletoads-Double Dragon (USA).zip
+genesis\Beavis and Butt-Head (USA).zip
+genesis\Captain America and the Avengers (USA).zip
+genesis\Castle of Illusion Starring Mickey Mouse (USA, Europe).zip
+genesis\Castlevania - Bloodlines (USA).zip
+genesis\Comix Zone (USA).zip
+genesis\Contra - Hard Corps (USA, Korea) (En).zip
+genesis\Desert Strike - Return to the Gulf (USA, Europe).zip
+genesis\Dr. Robotnik's Mean Bean Machine (USA).zip
+genesis\F-22 Interceptor - Advanced Tactical Fighter (USA, Europe) (F-202).zip
+genesis\Gain Ground (USA).zip
+genesis\Galaxy Force II (USA, Europe) (Rev B).zip
+genesis\Golden Axe (World).zip
+genesis\Golden Axe II (World).zip
+genesis\Golden Axe III (Europe) (Virtual Console).zip
+genesis\Gunstar Heroes (USA).zip
+genesis\John Madden Football - Championship Edition (USA).zip
+genesis\Jungle Strike (USA, Europe).zip
+genesis\Jurassic Park (USA).zip
+genesis\Lawnmower Man, The (USA, Europe).zip
+genesis\Lion King, The (World).zip
+genesis\Lost Vikings, The (USA).zip
+genesis\Madden NFL 95 (USA, Europe).zip
+genesis\Madden NFL 97 (USA, Europe).zip
+genesis\Master of Monsters (USA).zip
+genesis\Michael Jackson's Moonwalker (World) (Rev A).zip
+genesis\Mighty Morphin Power Rangers (USA).zip
+genesis\Mortal Kombat 3 (USA).zip
+genesis\Mutant League Football (USA, Europe).zip
+genesis\Mutant League Hockey (USA, Europe).zip
+genesis\NBA Jam (USA, Europe) (Rev 1).zip
+genesis\NBA Live 98 (USA).zip
+genesis\NFL Quarterback Club (World).zip
+genesis\NHL '94 (USA, Europe).zip
+genesis\OutRun (USA, Europe).zip
+genesis\OutRun 2019 (USA).zip
+genesis\Phantasy Star II (USA, Europe).zip
+genesis\Phantasy Star III - Generations of Doom (USA, Europe, Korea).zip
+genesis\Phantasy Star IV (USA).zip
+genesis\QuackShot Starring Donald Duck (World) (En,Ja) (Rev A).zip
+genesis\R.B.I. Baseball 3 (USA).zip
+genesis\Rambo III (Japan, USA) (En,Ja).zip
+genesis\Revenge of Shinobi, The (USA, Europe).zip
+genesis\Ristar (USA, Europe).zip
+genesis\Road Rash (USA, Europe).zip
+genesis\Road Rash 3 (USA, Europe).zip
+genesis\Road Rash II (USA, Europe).zip
+genesis\Rocket Knight Adventures (USA).zip
+genesis\Shining Force (USA).zip
+genesis\Shining Force II (USA).zip
+genesis\Shining in the Darkness (USA, Europe).zip
+genesis\Shinobi III - Return of the Ninja Master (USA).zip
+genesis\Sonic & Knuckles (World).zip
+genesis\Sonic & Knuckles + Sonic The Hedgehog 2 (World).zip
+genesis\Sonic & Knuckles + Sonic The Hedgehog 3 (USA).zip
+genesis\Sonic 3D Blast (USA, Europe, Korea) (En).zip
+genesis\Sonic Spinball (USA).zip
+genesis\Sonic The Hedgehog (USA, Europe).zip
+genesis\Sonic The Hedgehog 2 (World) (Rev A).zip
+genesis\Sonic The Hedgehog 3 (USA).zip
+genesis\Spider-Man (USA, Europe).zip
+genesis\Spider-Man (World) (Sega).zip
+genesis\Splatterhouse 2 (USA).zip
+genesis\Splatterhouse 3 (USA).zip
+genesis\Street Fighter II' - Special Champion Edition (USA).zip
+genesis\Street Racer (Europe).zip
+genesis\Streets of Rage (World).zip
+genesis\Streets of Rage 2 (USA).zip
+genesis\Streets of Rage 3 (USA).zip
+genesis\Sword of Vermilion (USA, Europe).zip
+genesis\Syd of Valis (USA).zip
+genesis\TaleSpin (USA, Europe).zip
+genesis\Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA).zip
+genesis\Tiny Toon Adventures - ACME All-Stars (USA, Korea) (En).zip
+genesis\Tiny Toon Adventures - Buster's Hidden Treasure (USA).zip
+genesis\ToeJam & Earl (USA, Europe, Korea) (En).zip
+genesis\ToeJam & Earl in Panic on Funkotron (USA).zip
+genesis\Ultimate Mortal Kombat 3 (USA).zip
+genesis\Urban Strike (USA, Europe).zip
+genesis\Valis (USA).zip
+genesis\Valis III (USA).zip
+genesis\Vectorman (USA, Europe).zip
+genesis\Vectorman 2 (USA).zip
+genesis\WeaponLord (USA).zip
+genesis\World Series Baseball '95 (USA).zip
+genesis\World Series Baseball '96 (USA).zip
+genesis\World Series Baseball '98 (USA).zip
+genesis\Zero Tolerance (USA, Europe) (Rev A).zip
+mastersystem\After Burner (World).zip
+mastersystem\Bubble Bobble (Europe, Brazil) (En).zip
+mastersystem\Dr. Robotnik's Mean Bean Machine (Europe, Brazil) (En).zip
+mastersystem\Golden Axe Warrior (USA, Europe, Brazil) (En).zip
+mastersystem\Golvellius - Valley of Doom (USA, Europe, Brazil) (En).zip
+mastersystem\OutRun (World).zip
+mastersystem\Phantasy Star (USA, Europe).zip
+mastersystem\Rambo - First Blood Part II (USA).zip
+mastersystem\Rampage (USA, Europe, Brazil) (En).zip
+mastersystem\Sonic Blast (Brazil) (En).zip
+mastersystem\Sonic Chaos (Europe, Brazil) (En).zip
+mastersystem\Sonic Spinball (Europe, Brazil) (En).zip
+mastersystem\Sonic The Hedgehog (USA, Europe, Brazil) (En).zip
+mastersystem\Sonic The Hedgehog 2 (Europe, Brazil) (En).zip
+mastersystem\Taito Chase H.Q. (Europe).zip
+mastersystem\Walter Payton Football (USA).zip
+pcenginecd\Mugen Senshi Valis - The Legend of a Fantasm Soldier (Japan).zip
+pcenginecd\Valis II (USA).zip
+pcenginecd\Valis III (USA).zip
+saturn\.hidden\Panzer Dragoon Saga (USA) (Disc 1).chd
+saturn\.hidden\Panzer Dragoon Saga (USA) (Disc 2).chd
+saturn\.hidden\Panzer Dragoon Saga (USA) (Disc 3).chd
+saturn\.hidden\Panzer Dragoon Saga (USA) (Disc 4).chd
+saturn\.hidden\Sakura Wars (En) (Disc 1).chd
+saturn\.hidden\Sakura Wars (En) (Disc 2).chd
+saturn\Albert Odyssey - Legend of Eldean (USA) (RE).chd
+saturn\Burning Rangers (USA).chd
+saturn\Daytona USA (USA).chd
+saturn\Die Hard Arcade (USA).chd
+saturn\Dragon Force (USA).chd
+saturn\Duke Nukem 3D (USA).chd
+saturn\Fighters Megamix (USA).chd
+saturn\Golden Axe - The Duel (USA).chd
+saturn\Guardian Heroes (USA).chd
+saturn\Hexen (USA).chd
+saturn\Magic Knight Rayearth (USA).chd
+saturn\NiGHTS into Dreams... (USA, Brazil).chd
+saturn\Panzer Dragoon (USA) (1S).chd
+saturn\Panzer Dragoon II Zwei (USA).chd
+saturn\Panzer Dragoon Saga (USA).m3u
+saturn\Princess Crown (Japan) (En) (v1.1b2) (eadmaster).chd
+saturn\Sakura Wars (English).m3u
+saturn\Sega Rally Championship (USA).chd
+saturn\Shining Force III (USA).chd
+saturn\Shining the Holy Ark (USA).chd
+saturn\Sonic R (USA, Brazil).chd
+saturn\Virtua Fighter 2 (USA).chd
+saturn\Virtual Open Tennis (USA).chd
+saturn\X-Men - Children of the Atom (USA).chd
+sega32x\After Burner Complete (Japan, USA) (En).zip
+sega32x\Doom (Japan, USA) (En).zip
+sega32x\Knuckles' Chaotix (Japan, USA) (En).zip
+sega32x\NBA Jam - Tournament Edition (World).zip
+sega32x\Star Wars Arcade (USA).zip
+segacd\Amazing Spider-Man vs. The Kingpin, The (USA).chd
+segacd\Dark Wizard (USA).chd
+segacd\Eternal Champions - Challenge from the Dark Side (USA).chd
+segacd\Final Fight CD (USA).chd
+segacd\Keio Flying Squadron (USA).chd
+segacd\NHL '94 (USA).chd
+segacd\Popful Mail (USA) (RE).chd
+segacd\Shining Force CD (Europe).chd
+segacd\Snatcher (USA).chd
+segacd\Sonic CD (Europe).chd
+segacd\Star Wars - Rebel Assault (USA).chd
+segacd\Vay (USA).chd
