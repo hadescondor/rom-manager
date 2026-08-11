@@ -25,6 +25,9 @@ gba\Castlevania - Aria of Sorrow (USA).zip
 gba\Castlevania - Circle of the Moon (USA).zip
 gba\Castlevania - Harmony of Dissonance (USA).zip
 gba\Dragon Quest Monsters - Caravan Heart (Japan) (En) (v1.0) (KaioShin).zip
+gba\F-Zero - Climax (Japan).zip
+gba\F-Zero - GP Legend (USA).zip
+gba\F-Zero - Maximum Velocity (USA, Europe).zip
 gba\Final Fantasy I & II - Dawn of Souls (USA).zip
 gba\Final Fantasy IV Advance (USA).zip
 gba\Final Fantasy Tactics Advance (Europe) (En,Fr,De,Es,It).zip
@@ -33,9 +36,6 @@ gba\Final Fantasy VI Advance (Europe) (En,Fr,De,Es,It).zip
 gba\Fire Emblem - The Binding Blade (En) (v1.2.1) (Gringe).zip
 gba\Fire Emblem - The Blazing Blade (USA, Australia).zip
 gba\Fire Emblem - The Sacred Stones (Europe) (En,Fr,De,Es,It).zip
-gba\F-Zero - Climax (Japan).zip
-gba\F-Zero - GP Legend (USA).zip
-gba\F-Zero - Maximum Velocity (USA, Europe).zip
 gba\Golden Sun - The Lost Age (USA, Europe).zip
 gba\Golden Sun (USA, Europe).zip
 gba\Gunstar Super Heroes (USA).zip
@@ -70,19 +70,67 @@ gbah\Pokemon - Fire Red Version (USA) (QoL Enhancement).zip
 gbah\Pokemon - Liquid Crystal Version (USA).zip
 gbah\Pokemon - Ultra Violet Version (USA, Europe).zip
 gbah\Pokemon - Unbound (v2.1.1) (Hack).zip
+gbc\BattleTanx (USA).zip
+gbc\Bomberman Quest (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Bugs Bunny in - Crazy Castle 4 (USA).zip
+gbc\Crystalis (USA).zip
+gbc\Dragon Ball Z - Legendary Super Warriors (USA).zip
 gbc\Dragon Warrior I & II (USA) (SGB Enhanced) (GB Compatible).zip
 gbc\Dragon Warrior III (USA).zip
 gbc\Dragon Warrior Monsters (USA, Europe) (SGB Enhanced) (GB Compatible).zip
 gbc\Dragon Warrior Monsters 2 - Cobi's Journey (USA) (SGB Enhanced) (GB Compatible).zip
 gbc\Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Game & Watch Gallery 2 (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Game & Watch Gallery 3 (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Grand Theft Auto (USA) (GB Compatible).zip
+gbc\Grand Theft Auto 2 (USA).zip
+gbc\Harvest Moon 2 GBC (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Harvest Moon 3 GBC (USA).zip
+gbc\Harvest Moon GBC (USA) (SGB Enhanced) (GB Compatible).zip
 gbc\Heroes of Might and Magic (USA) (En,Fr,De).zip
 gbc\Heroes of Might and Magic II (USA) (En,Fr,De).zip
+gbc\Hole in One Golf (USA) (Rumble Version) (SGB Enhanced) (GB Compatible).zip
+gbc\Kirby - Tilt 'n' Tumble (USA).zip
+gbc\Klax (USA, Europe).zip
 gbc\Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced) (GB Compatible).zip
 gbc\Legend of Zelda, The - Oracle of Ages (USA, Australia).zip
 gbc\Legend of Zelda, The - Oracle of Seasons (USA, Australia).zip
+gbc\Lufia - The Legend Returns (USA).zip
+gbc\Magical Drop (USA).zip
+gbc\Mario Golf (USA).zip
+gbc\Mario Tennis (USA).zip
+gbc\Mega Man Xtreme (USA, Europe) (GB Compatible).zip
+gbc\Mega Man Xtreme 2 (USA, Europe).zip
+gbc\Metal Gear Solid (USA).zip
+gbc\Micro Machines 1 and 2 - Twin Turbo (USA, Europe).zip
+gbc\Micro Machines V3 (USA, Europe).zip
+gbc\Moomin's Tale (Europe) (En,Fr,De).zip
+gbc\Mr. Driller (USA).zip
+gbc\Perfect Dark (USA, Europe) (En,Fr,De,Es,It) (Rumble Version).zip
 gbc\Pokemon - Crystal Version (USA, Europe) (Rev 1).zip
 gbc\Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible).zip
 gbc\Pokemon - Silver Version (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Pokemon Pinball (USA, Australia) (Rumble Version) (SGB Enhanced) (GB Compatible).zip
+gbc\Pokemon Puzzle Challenge (USA, Australia).zip
+gbc\Pokemon Trading Card Game (USA, Australia) (SGB Enhanced) (GB Compatible).zip
+gbc\Resident Evil Gaiden (USA).zip
+gbc\Road Rash (USA, Europe).zip
+gbc\Sakura Wars GB (English v0.0.1).zip
+gbc\Shantae (USA).zip
+gbc\Snoopy Tennis (Europe) (En,Fr,De,Es,It,Nl).zip
+gbc\Star Ocean - Blue Sphere (Japan) (En) (v1.0a) (4l3j4ndr0).zip
+gbc\Super Mario Bros. Deluxe (USA, Europe) (Rev 1).zip
+gbc\Survival Kids (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Survival Kids 2 - Dasshutsu!! Futago-Jima! (Japan) (En) (USC, hattontown) (v0.9).zip
+gbc\Top Gear Pocket 2 (USA).zip
+gbc\Turok - Rage Wars (USA, Europe) (En,Fr,De,Es).zip
+gbc\Turok 2 - Seeds of Evil (USA, Europe) (En,Fr,De,Es) (GB Compatible).zip
+gbc\Turok 3 - Shadow of Oblivion (USA, Europe) (En,Fr,De,Es).zip
+gbc\Wario Land 3 (World) (En,Ja).zip
+gbc\Wario Land II (USA, Europe) (SGB Enhanced) (GB Compatible).zip
+gbc\Yu-Gi-Oh! - Dark Duel Stories (En) (Early Days Collection).zip
+gbc\Yu-Gi-Oh! Duel Monsters 4 - Battle of Great Duelist - Jounouchi Deck (En) (Early Days Collection).zip
+gbc\Yu-Gi-Oh! Duel Monsters II - Dark Duel Stories (En) (Early Days Collection).zip
 gbch\Final Fantasy Adventure Color (USA).zip
 gbch\Final Fantasy Legend DX, The (USA).zip
 gbch\Final Fantasy Legend II DX (USA).zip
@@ -174,6 +222,7 @@ snes\Dragon Quest III - Soshite Densetsu he... (Japan) (En) (v1.1) (DaMarsMan).z
 snes\Dragon Quest V - Tenkuu no Hanayome (Japan) (En) (v2.01F) (DeJap).zip
 snes\Dragon Quest VI - Maboroshi no Daichi (Japan) (En) (v0.90.2) (NoPrgress).zip
 snes\EarthBound (USA).zip
+snes\F-Zero (USA).zip
 snes\Fatal Fury (USA).zip
 snes\Fatal Fury 2 (USA).zip
 snes\Fatal Fury Special (USA).zip
@@ -181,7 +230,6 @@ snes\Final Fantasy - Mystic Quest (USA).zip
 snes\Final Fantasy II (USA).zip
 snes\Final Fantasy III (USA).zip
 snes\Final Fight Guy (USA).zip
-snes\F-Zero (USA).zip
 snes\Illusion of Gaia (USA).zip
 snes\Jungle Strike (USA).zip
 snes\Kirby Super Star (USA).zip
@@ -223,6 +271,9 @@ snes\WeaponLord (USA).zip
 snes\Ys III - Wanderers from Ys (USA).zip
 snes\Ys IV - Mask of the Sun (Japan) (En) (v2.10) (Aeon Genesis).zip
 snes\Ys V - Ushinawareta Suna no Miyako Kefin (Japan) (En) (v1.0) (Aeon Genesis).zip
+snesh\Antinomia Final Fantasy VI (v2.0).zip
 snesh\EarthBound (USA) (New Controls) (v1.0) (Herringway).zip
+snesh\EarthBound Beginnings (USA) (v1.2).zip
 snesh\FFVI - T-Edition (En) (v1.1) (Tomato) (Hack).zip
+snesh\Final Fantasy III (USA) - Brave New World.zip
 snesh\SMW - A Plumber for All Seasons (WhiteYoshiEgg) (v2021-11-09) (Hack).zip

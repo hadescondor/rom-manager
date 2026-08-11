@@ -3,11 +3,12 @@
   "CollectionsRoot": "D:\\rom-manager\\collections",
   "LogRoot": "D:\\rom-manager\\logs",
   "Devices": {
-    "rg28xx": "E:\\ROMs",
+    "rg28xx": "G:\\ROMs",
     "rg477m": "G:\\ROMs",
     "rp5": "H:\\ROMs",
-    "rpc4b": "G:\\ROMs",
-    "rpc6b": "H:\\ROMs"
+    "rpc4b": "F:\\ROMs",
+    "rpc6b": "H:\\ROMs",
+    "rpnova": "F:\\ROMs"
   },
   "Exclusions": [
     ".nomedia",
@@ -16,7 +17,9 @@
     "Thumbs.db"
   ],
   "ExcludeDirectories": [
+    "androidapps",
     "BIOS",
+    "emulators",
     "System Volume Information"
   ]
 }

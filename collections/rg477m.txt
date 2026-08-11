@@ -1,26 +1,3 @@
-BIOS\bios_CD_E.bin
-BIOS\bios_CD_J.bin
-BIOS\bios_CD_U.bin
-BIOS\dc\dc_boot.bin
-BIOS\gb_bios.bin
-BIOS\gba_bios.bin
-BIOS\gbc_bios.bin
-BIOS\gc-ntsc-12-101.bin
-BIOS\mpr-17933.bin
-BIOS\saturn_bios.bin
-BIOS\SCPH-10000.bin
-BIOS\SCPH-30004R.bin
-BIOS\SCPH-39001.bin
-BIOS\SCPH-70004.BIN
-BIOS\SCPH-90001.bin
-BIOS\scph5500.bin
-BIOS\scph5501.bin
-BIOS\scph5502.bin
-BIOS\sega_101.bin
-BIOS\syscard1.pce
-BIOS\syscard2.pce
-BIOS\syscard3.pce
-BIOS\tos.img
 dreamcast\ChuChu Rocket! (USA) (En,Ja,Fr,De,Es).chd
 dreamcast\Crazy Taxi (USA).chd
 dreamcast\Crazy Taxi 2 (USA).chd
@@ -86,6 +63,7 @@ gba\Fire Emblem - The Blazing Blade (USA, Australia).zip
 gba\Fire Emblem - The Sacred Stones (Europe) (En,Fr,De,Es,It).zip
 gba\Golden Sun - The Lost Age (USA, Europe).zip
 gba\Golden Sun (USA, Europe).zip
+gba\Gunstar Super Heroes (USA).zip
 gba\Jet Grind Radio (USA).zip
 gba\Kirby - Nightmare in Dream Land (USA).zip
 gba\Kirby & The Amazing Mirror (USA).zip
@@ -175,6 +153,8 @@ gbc\Dragon Warrior III (USA).zip
 gbc\Dragon Warrior Monsters (USA, Europe) (SGB Enhanced) (GB Compatible).zip
 gbc\Dragon Warrior Monsters 2 - Cobi's Journey (USA) (SGB Enhanced) (GB Compatible).zip
 gbc\Dragon Warrior Monsters 2 - Tara's Adventure (USA) (SGB Enhanced) (GB Compatible).zip
+gbc\Heroes of Might and Magic (USA) (En,Fr,De).zip
+gbc\Heroes of Might and Magic II (USA) (En,Fr,De).zip
 gbc\Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced) (GB Compatible).zip
 gbc\Legend of Zelda, The - Oracle of Ages (USA, Australia).zip
 gbc\Legend of Zelda, The - Oracle of Seasons (USA, Australia).zip
@@ -187,7 +167,15 @@ gbh\Kirby's Dream Land 2 DX (USA, Europe).zip
 gbh\Pokemon - Brown Version (USA, Europe) (SGB Enhanced).zip
 gbh\Super Mario Land (World) (DX) (toruzz) (v1.0).zip
 gbh\Super Mario Land 2 - 6 Golden Coins (USA) (DX) (toruzz) (v1.81).zip
+gc\.hidden\Baten Kaitos - Eternal Wings and the Lost Ocean (USA) (Disc 1).rvz
+gc\.hidden\Baten Kaitos - Eternal Wings and the Lost Ocean (USA) (Disc 2).rvz
+gc\.hidden\Baten Kaitos Origins (USA) (Disc 1).rvz
+gc\.hidden\Baten Kaitos Origins (USA) (Disc 2).rvz
+gc\.hidden\Tales of Symphonia (USA) (Disc 1).rvz
+gc\.hidden\Tales of Symphonia (USA) (Disc 2).rvz
 gc\Animal Crossing (USA).rvz
+gc\Baten Kaitos - Eternal Wings and the Lost Ocean (USA).m3u
+gc\Baten Kaitos Origins (USA).m3u
 gc\Battalion Wars (USA).rvz
 gc\Chibi-Robo! (Europe) (En,Fr,De,Es,It).rvz
 gc\Cubivore - Survival of the Fittest (USA).rvz
@@ -209,6 +197,12 @@ gc\Mario Party 6 (USA).rvz
 gc\Mario Party 7 (USA) (Rev 1).rvz
 gc\Mario Power Tennis (USA) (Rev 1).rvz
 gc\Mario Superstar Baseball (USA).rvz
+gc\Mega Man X Collection (USA).rvz
+gc\Metroid Prime (USA).rvz
+gc\Need for Speed - Hot Pursuit 2 (USA).rvz
+gc\Need for Speed - Most Wanted (USA).rvz
+gc\Need for Speed - Underground (USA).rvz
+gc\Need for Speed - Underground 2 (USA).rvz
 gc\Paper Mario - The Thousand-Year Door (USA).rvz
 gc\Phantasy Star Online Episode I & II Plus (USA) (En,Ja,Fr,De,Es) (Rev 2).rvz
 gc\Pokemon Colosseum (USA).rvz
@@ -220,6 +214,7 @@ gc\Star Wars - Rogue Squadron II - Rogue Leader (USA).rvz
 gc\Super Mario Strikers (USA).rvz
 gc\Super Mario Sunshine (USA).rvz
 gc\Super Smash Bros. Melee (USA) (En,Ja) (Rev 2).rvz
+gc\Tales of Symphonia (USA).m3u
 gc\TimeSplitters 2 (USA).rvz
 gc\Tony Hawk's Pro Skater 3 (USA).rvz
 gc\Tony Hawk's Pro Skater 4 (USA).rvz
@@ -469,6 +464,8 @@ ps2\Ar Tonelico - Melody of Elemia (USA).chd
 ps2\Ar Tonelico II - Melody of Metafalica (USA).chd
 ps2\Armored Core 2 - Another Age (USA).chd
 ps2\Armored Core 2 (USA).chd
+ps2\Baroque (USA).chd
+ps2\Burnout 3 - Takedown (USA).chd
 ps2\Chaos Break (Europe) (En,Fr,De,It).chd
 ps2\Dark Cloud 2 (USA) (v2.00).chd
 ps2\Dot Hack Part 1 - Infection (Europe) (En,Fr,De,Es,It).chd
@@ -484,16 +481,27 @@ ps2\Max Payne (USA).chd
 ps2\Max Payne 2 - The Fall of Max Payne (USA).chd
 ps2\Melty Blood - Actress Again (Japan).chd
 ps2\Metal Saga (USA).chd
+ps2\Midnight Club 3 - DUB Edition Remix (USA).chd
+ps2\Midnight Club II (USA).chd
 ps2\Namco X Capcom (Japan) (En) (Final) (TransGen).chd
+ps2\Need for Speed - Hot Pursuit 2 (USA).chd
+ps2\Need for Speed - Most Wanted - Black Edition (USA).chd
+ps2\Need for Speed - Underground (USA).chd
+ps2\Need for Speed - Underground 2 (USA).chd
 ps2\Okage - Shadow King (USA).chd
+ps2\Ookami (USA).chd
 ps2\Radiata Stories (USA).chd
 ps2\Ridge Racer V (USA).chd
 ps2\Rogue Galaxy (USA).chd
 ps2\Sakura Wars - So Long, My Love (USA) (Disc 1) (English Voice Over).chd
+ps2\Sega Ages 2500 Series Vol. 1 - Phantasy Star Generation-1 (Japan) (En_v303 2XP).chd
+ps2\Sega Ages 2500 Series Vol. 17 - Phantasy Star Generation-2 (Japan) (En_v300).chd
 ps2\Shadow Hearts (USA).chd
 ps2\Shin Megami Tensei - Digital Devil Saga (USA).chd
 ps2\Silent Hill 2 (USA) (En,Ja,Fr,De,Es,It) (v2.01).chd
 ps2\Simpsons, The - Hit & Run (USA).chd
+ps2\Sly 2 - Band of Thieves (USA).chd
+ps2\Sly Cooper and the Thievius Raccoonus (USA).chd
 ps2\Star Ocean - Till the End of Time (USA).m3u
 ps2\Suikoden III (USA).chd
 ps2\Super Robot Taisen - Original Generations (English v1.2).chd
@@ -756,6 +764,7 @@ snesh\EarthBound Beginnings (USA).zip
 snesh\FFVI - T-Edition (En) (v1.1) (Tomato) (Hack).zip
 snesh\Final Fantasy III (USA) - Brave New World.zip
 snesh\SMW - A Plumber for All Seasons (WhiteYoshiEgg) (v2021-11-09) (Hack).zip
+wii\Arc Rise Fantasia (USA) (Undub).rvz
 wii\Arc Rise Fantasia (USA).rvz
 wii\Battalion Wars 2 (USA).rvz
 wii\Dead Rising - Chop Till You Drop (USA) (En,Fr,Es).rvz
