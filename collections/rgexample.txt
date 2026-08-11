@@ -1,0 +1,5 @@
+system\example.zip
+system2\.hidden\example2.chd (Disk 1)
+system2\.hidden\example2.chd (Disk 2)
+system2\example.chd
+system2\example2.m3u
